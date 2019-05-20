@@ -1,0 +1,245 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void print_a();
+void print_menu();
+
+
+void main()
+{
+    int size,hr,many;
+    char k[10];
+    int menu,a,i;
+    float B,C;
+    float sumc=0.0,sumb=0.0;
+
+    printf("    ***************************************************************************************************************\n");
+    printf("    *                                                                                                             *\n");
+    printf("    *                                                                                                             *\n");
+    printf("    *         *                                                                                      *            *\n");
+    printf("    *        ***                                                                                    ***           *\n");
+    printf("    *       *****             ****             *       ***            ***   ************           *****          *\n");
+    printf("    *      *******          ***  ***          ***      ***            ***   ************          *******         *\n");
+    printf("    *     *********        ***   ***         *****     ***            ***     ***                *********        *\n");
+    printf("    *    ***********       ***              *** ***     ***          ***      ***               ***********       *\n");
+    printf("    *   *************        ***           ***   ***     ***        ***      ************      *************      *\n");
+    printf("    *  ***************         ***        ***     ***     ***      ***       ************     ***************     *\n");
+    printf("    * *****************          ***     ***       ***     ***    ***        ************    *****************    *\n");
+    printf("    *         *            ***    ***   ***************     ***  ***          ***                    *            *\n");
+    printf("    *        ***           ***    ***  *****************     ******           ***                   ***           *\n");
+    printf("    *       *****           ***  ***   ***           ***      ****           ************          *****          *\n");
+    printf("    *      *******            ****     ***           ***       **            ************         *******         *\n");
+    printf("    *     *********                                                                              *********        *\n");
+    printf("    *    ***********      ******  **  **  *****    **     **   *****   ****   **    ****        ***********       *\n");
+    printf("    *   *************       **    **  **  **       **  *  **  *** ***  ** **  **    ** **      *************      *\n");
+    printf("    *  ***************      **    ******  *****    ** *** **  *** ***  ****   **    **  **    ***************     *\n");
+    printf("    * *****************     **    **  **  **        *** ***   *** ***  ** **  **    ** **    *****************    *\n");
+    printf("    *        ***            **    **  **  *****      *   *     *****   **  ** ***** ****            ***           *\n");
+    printf("    *        ***                                                                                    ***           *\n");
+    printf("    *        ***                                                                                    ***           *\n");
+    printf("    *        ***                        PRESS ANY KEY FOR CONTINUE                                  ***           *\n");
+    printf("    *                                                                                                             *\n");
+    printf("    *                                                                                                             *\n");
+    printf("    *                                                                                                             *\n");
+    printf("    ***************************************************************************************************************\n");
+    scanf("%s",&k);
+
+
+    print_a();
+
+
+    scanf("%d",&a);
+
+    for(i=0;i<a;i++){
+
+    print_menu();
+
+    scanf("%d",&menu);
+
+    printf("\nHow long (hrs)?\n");
+    printf("=>");
+    scanf("%d",&hr);
+
+    printf("\nHow many ?\n");
+    printf("=>");
+    scanf("%d",&many);
+
+
+
+    switch(menu){
+    case 1:
+           printf("\nWhat size ?\n");
+           printf("S = 1\n");
+           printf("M = 2\n");
+           printf("L = 3\n");
+           printf("=>");
+           scanf("%d",&size);
+            if(size==1){ B = 0.75*hr*3.96*many;
+            C = 0.75*hr;}
+            if(size==2){ B = 2.45*hr*3.96*many;
+            C = 2.45*hr;}
+            if(size==3){ B = 7.84*hr*3.96*many;
+            C = 7.84*hr;}
+            printf("\n%.2f Bath  \n",B);
+            printf("Carbon dioxide = %.2f Kg  \n",C);
+
+            break;
+
+    case 2: B = 0.45*hr*3.96*many;
+            C = 0.75*hr*many ;
+
+            printf("\n%.2f Bath  \n",B);
+            printf("Carbon dioxide = %.2f Kg  \n",C);
+
+            break;
+
+    case 3: B = 0.085*hr*3.96*many;
+            C = 0.75*hr*many ;
+
+            printf("\n%.2f Bath  \n",B);
+            printf("Carbon dioxide = %.2f Kg  \n",C);
+
+
+            break;
+
+    case 4: B = 0.02*hr*3.96*many;
+            C = 0.02*hr*many ;
+
+            printf("\n%.2f Bath  \n",B);
+            printf("Carbon dioxide = %.2f Kg  \n",C);
+
+            break;
+
+    default : break;
+
+
+    }
+
+    sumb=sumb+B;
+    sumc=sumc+C;
+
+
+}
+      printf("\n Press Any Key For Continue  \n");
+      scanf("%s",&k);
+
+        if(sumc<=200){
+                        printf("                                                \n");
+                        printf("                   **************n\n");
+                        printf("                ********************n\n");
+                        printf("             **************************n\n");
+                        printf("            ****************************n\n");
+                        printf("          *********************************n\n");
+                        printf("         *******  ***************  *********n\n");
+                        printf("        *******  *  ***********  *  *********n\n");
+                        printf("        *******  *  ***********  *  *********n\n");
+                        printf("        *******  *  ***********  *  *********n\n");
+                        printf("        *************************************n\n");
+                        printf("        *************************************n\n");
+                        printf("        *************************************n\n");
+                        printf("         ************  *****  **************n\n");
+                        printf("          ************  ***  **************n\n");
+                        printf("           *************   ***************n\n");
+                        printf("            *****************************n\n");
+                        printf("             **************************n\n");
+                        printf("                ********************n\n");
+                        printf("                   *************n\n");
+                        printf("                                                \n");
+                        printf("        ***    ***     ****      *     ******   \n");
+                        printf("       *       *  *    *        * *      **     \n");
+                        printf("       *   **  ***     ****    *   *     **     \n");
+                        printf("       *   *   * *     *      *******    **     \n");
+                        printf("        ***    *  *    ****  *       *   **     \n");
+
+
+
+
+    }
+
+    if(sumc>200){
+                        printf("                                                \n");
+                        printf("                   *************n\n");
+                        printf("                ********************n\n");
+                        printf("             **************************n\n");
+                        printf("            ****************************n\n");
+                        printf("          *********************************n\n");
+                        printf("         ***********************************n\n");
+                        printf("        ******  ********************   ******n\n");
+                        printf("        ********  *****************  *********n\n");
+                        printf("        **********  **************  **********n\n");
+                        printf("        ************  **********  ************n\n");
+                        printf("        **************************************n\n");
+                        printf("        *************************************n\n");
+                        printf("         ****************   ****************n\n");
+                        printf("          ************  *****  ************n\n");
+                        printf("           **********  ********  *********n\n");
+                        printf("            *****************************n\n");
+                        printf("             **************************n\n");
+                        printf("                ********************n\n");
+                        printf("                   *************n\n");
+                        printf("                                                \n");
+                        printf("                ****        *        ****       \n");
+                        printf("                *   *      * *       *   *      \n");
+                        printf("                ****      *   *      *   *      \n");
+                        printf("                *   *    *******     *   *      \n");
+                        printf("                ****    *       *    ****       \n");
+
+
+    }
+    printf("\nsummation Money = %.2f Bath\n",sumb);
+    printf("summation Carbon dioxide = %.2f Kg\n",sumc);
+
+    printf("\n Press Any Key  \n");
+    scanf("%s",&k);
+
+      printf("                                                                        \n");
+      printf("    ****     ***           ***           ***    ****     ****           \n");
+      printf("   **  **  **   **           ***        *   *  **  **   **  **          \n");
+      printf("   **      **   **             ***         *   **  **   **  **          \n");
+      printf("   **  **  **   **           ***         *     **  **   **  **          \n");
+      printf("    ****     ***   **      ***         ******   ****     ****           \n");
+      printf("                  *  *                                                  \n");
+      printf("                    *                                                   \n");
+      printf("                  ****                                                  \n");
+      printf("                                                                        \n");
+      printf("                        *******                                         \n");
+      printf("                      ***********                                       \n");
+      printf("         *****        ************                                      \n");
+      printf("         *****        ***  **  ***                                      \n");
+      printf("                      ***  **  ***                                      \n");
+      printf("                       **********                                       \n");
+      printf("                        ** ** **                                        \n");
+      printf("                        ** ** **                                        \n");
+      printf("                                                                        \n");
+      printf("                                                                        \n");
+      printf("       CO2 more than 200 Kg in the air                                  \n");
+      printf("          it will be dangerous for your health                          \n");
+      printf("                                                                        \n");
+      printf("                                                                        \n");
+      printf("                        Press Any Key For Exit Program. THANK  YOU      \n");
+      printf("                                                                        \n");
+
+      scanf("%s",&k);
+
+
+    return 0;
+}
+void print_a()
+{
+    printf("\nHow many type of electronics do you want to calculate ?\n");
+    printf("1 = Air conditioner \n");
+    printf("2 = Computer \n");
+    printf("3 = A fan \n");
+    printf("4 = Light bulb\n");
+    printf("=>");
+
+
+}
+
+void print_menu()
+{
+    printf("\nWhat electronics do you want to calculate ?\n");
+    printf("=>");
+
+
+}
